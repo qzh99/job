@@ -153,6 +153,8 @@ class Runnable2 implements Runnable{
 
 ## 3、检测死锁
 
+> 参考：https://www.cnblogs.com/flyingeagle/articles/6853167.html
+
 ### 3.1、获取Java进程
 
 ```
