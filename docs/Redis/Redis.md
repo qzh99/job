@@ -5,13 +5,12 @@ AOF（append only file），是把Redis写命令写命令追加到文件中的�
 ## 解决
 
 + 手动执行命令`redis-cli BGREWRITEAOF`
-
 + Redis 2.4 版本开始可以自动重写，在redis.conf中，可以配置rewrite策略
 
-  ```
+```
 auto-aof-rewrite-percentage 100
-  auto-aof-rewrite-min-size 64mb
-  ```
+auto-aof-rewrite-min-size 64mb
+```
 
 解释：比如说上一次AOF rewrite之后，是128mb，然后就会接着128mb继续写AOF的日志，如果发现增长的比例，超过了之前的100%，256mb，就可能会去触发一次rewrite 但是此时还要去跟min-size，64mb去比较，256mb > 64mb，才会去触发rewrie
 
