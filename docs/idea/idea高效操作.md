@@ -28,6 +28,13 @@ ctrl + alt +　m（method）、c（constants）、f（fiels）、v（variables�
 alt+shift + 上下键
 
 移动代码块
-ctrl+shifit + 上下键
+ctrl+shift + 上下键
+```
+
+
+
+```
+移动光标到下一行开头
+ctrl + shift + enter
 ```
 
